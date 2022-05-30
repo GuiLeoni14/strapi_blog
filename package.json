@@ -7,10 +7,13 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "cd plugins/wysiwyg && npm i"
   },
   "devDependencies": {},
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^1.1.0",
+    "@strapi/plugin-graphql": "^4.1.11",
     "@strapi/plugin-i18n": "4.1.11",
     "@strapi/plugin-users-permissions": "4.1.11",
     "@strapi/provider-upload-cloudinary": "^4.1.11",
@@ -24,7 +27,7 @@
     "uuid": "5237d6c7-e584-4806-acdc-241725e16c4b"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
