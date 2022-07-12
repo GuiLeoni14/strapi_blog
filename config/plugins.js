@@ -18,7 +18,11 @@ module.exports = ({ env }) => ({
     config: {
       playgroundAlways: true,
       defaultLimit: 10,
-      maxLimit: 20
+      maxLimit: 20,
+      introspection: true,
+      apolloServer: {
+        tracing: false,
+      },
     },
-  }
+  },
 });
